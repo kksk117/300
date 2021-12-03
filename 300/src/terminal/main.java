@@ -41,6 +41,7 @@ public class main
 
         //d.lol();
         d.member_record_writer();
+        d.shut();
 
 
     }
