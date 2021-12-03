@@ -1,0 +1,20 @@
+1) 
+[Date of Service (MM-DD-YYYY)] 
+[Date and time received by computer (MM-DD-YYYY, HH:MM:SS)] 
+[Member name (25 characters)] 
+[Member Number (9 digits)] 
+[Service code (6 digits)] 
+[Fee to be paid (Max $999.99)]
+.
+.
+.
+n) 
+[Date of Service (MM-DD-YYYY)] 
+[Date and time received by computer (MM-DD-YYYY, HH:MM:SS)] 
+[Member name (25 characters)] 
+[Member Number (9 digits)] 
+[Service code (6 digits)] 
+[Fee to be paid (Max $999.99)]
+
+[# of consultations with members]
+[Total Fee for the week (Max $99,999.99)]

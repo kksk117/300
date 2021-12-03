@@ -1,0 +1,140 @@
+1
+Physical Therapy
+597.99
+208851
+2
+Intensive Care
+1015.99
+208852
+3
+Appendectomy
+256.99
+208853
+4
+Skin Graft
+291.99
+208854
+5
+Blood Transfusion
+819.99
+208855
+6
+Gallbladder Removal
+1012.99
+208856
+7
+Nerve Treatments
+973.99
+208857
+8
+Acupuncture
+963.99
+208858
+9
+Pap Test
+357.99
+208859
+10
+Tattoo Removal
+465.99
+208860
+11
+Ultrasound
+551.99
+208861
+12
+Knee Replacement
+673.99
+208862
+13
+Chemotherapy
+742.99
+208863
+14
+Colonoscopy
+896.99
+208864
+15
+Antibiotic Treatment
+235.99
+208865
+16
+Eye Exam
+721.99
+208866
+17
+Heart Transplant
+566.99
+208867
+18
+Radiation Therapy
+637.99
+208868
+19
+Root Canal
+806.99
+208869
+20
+CAT Scan
+1077.99
+208870
+21
+X-Ray Scan
+942.99
+208871
+22
+Endoscopy
+931.99
+208872
+23
+Face Lift
+602.99
+208873
+24
+Vaccination
+1059.99
+208874
+25
+Genetic Testing
+289.99
+208875
+26
+Hormone Therapy
+585.99
+208876
+27
+Liver Transplant
+654.99
+208877
+28
+Lazer Eye Surgery
+570.99
+208878
+29
+Mammogram
+1050.99
+208879
+30
+Plastic Surgery
+542.99
+208880
+31
+Tonsillectomy
+316.99
+208881
+32
+Tracheostomy
+899.99
+208882
+33
+Surgical Sterilization
+810.99
+208883
+34
+Urinalysis
+472.99
+208884
+35
+Pokemon Healing
+1090.99
+208885
