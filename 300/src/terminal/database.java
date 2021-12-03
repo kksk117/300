@@ -381,12 +381,12 @@ public class database
 
     public void member_record_writer(File f,member_data md) throws IOException
     {
-
+        /*
         FileWriter fw = new FileWriter(f);
 
         BufferedWriter writer = new BufferedWriter(fw);
 
-        /*
+
         writer.write(md.getMember_name());
         writer.newLine();
         writer.write(Integer.toString(md.getID()));
@@ -401,7 +401,7 @@ public class database
         writer.newLine();
 
 
-         */
+
         int index = 0;
 
         for (member_record mr : md.getMember_records_list())
@@ -420,7 +420,29 @@ public class database
             index++;
         }
         writer.close();
+
+         */
+        try (FileWriter fw = new FileWriter(f, true))
+        {
+
+            for (member_record mr : md.getMember_records_list())
+            {
+                fw.append("\n");
+
+                fw.append(mr.getDate()+"\n");
+
+                fw.append(mr.getProvider_name()+"\n");
+
+                fw.append(mr.getService_name());
+
+            }
+
+        }
+
+
     }
+
+
 
 
     public void member_record_writer() throws IOException
@@ -460,9 +482,7 @@ public class database
 
                 filename.createNewFile();
 
-
-
-
+                
                 FileWriter fw = new FileWriter(path);
 
                 BufferedWriter writer = new BufferedWriter(fw);
