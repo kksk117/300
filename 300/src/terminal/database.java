@@ -30,8 +30,19 @@ public class database
         pd_reader();
     }
 
+    public void shut() throws IOException    //remember to shut() after use the database
+    {
+        provider_writer();
+        member_writer();
+        //pd_writer();
 
-    public void bill_choc(String provider_name)
+        //member_record_writer();
+
+        //print_providers();
+    }
+
+
+    public void bill_choc(provider_data pd)
     {
         Scanner input = new Scanner(System.in);
         int choice = 0;
@@ -96,19 +107,22 @@ public class database
             //member_record mr = new member_record(date, provider_name, service_name);
 
 
-            for(member_data m_date :member_list)
+            for(member_data m_data :member_list)
             {
-                if(id == m_date.getID())
+                if(id == m_data.getID())
                 {
                    // m_date.setMember_records_list();
                     //m_date.getMember_records_list().add(mr);
-                    md.add_report(date, provider_name, service_name);
+                    md.add_report(date, pd.getProvider_name(), service_name);
+                    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
+                    LocalDateTime now = LocalDateTime.now();
+
+                    pd.add_report(date,now.toString(), md.getMember_name(), Integer.toString(md.getID()),Integer.toString(s_code),Float.toString(fee));
                 }
             }
         } while (choice == 1);
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
+
 
 
 
@@ -355,8 +369,6 @@ public class database
     public void member_record_reader()
     {
         for(member_data md:member_list)
-
-
         {
             String path = md.getMember_name() + ".txt";
             File filename = new File(path);
@@ -482,7 +494,7 @@ public class database
 
                 filename.createNewFile();
 
-                
+
                 FileWriter fw = new FileWriter(path);
 
                 BufferedWriter writer = new BufferedWriter(fw);
@@ -924,20 +936,6 @@ public class database
         return null;
     }
 
-    public void lol()
-    {
-        for(member_data md:member_list)
-        {
-            if(md.getMember_records_list() != null)
-            {
-                for (int i = 0; i < md.getMember_records_list().size(); i++)
-                {
-                    System.out.println(md.getMember_records_list().get(i).getProvider_name());
-                }
-            }
-        }
-    }
 
-}
 
 
