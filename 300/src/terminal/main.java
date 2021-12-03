@@ -40,7 +40,7 @@ public class main
         } while (choice != 3);
 
         //d.lol();
-        d.member_record_writer();
+
         d.shut();
 
 
